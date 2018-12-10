@@ -56,3 +56,47 @@ body{
     padding-top:35px;
   }
 }
+
+.gallery-container{
+  text-align: center;
+  margin:50px 0;
+  h1{
+    padding-bottom:35px;
+  }
+  .lightbox img{
+    transition: 0.5s;
+    &:hover{
+      transform: scale(1.04);
+    }
+  }
+}
+
+.contact{
+  padding:20px 80px;
+  margin:0 auto;
+  background-color:#1d1d1d;
+  h1{
+    color:#59842c;
+    text-align: center;
+  }
+  i{
+    font-size:50px;
+    color:#59842c;
+  }
+  span{
+    color:white;
+    padding:0 15px;
+  }
+}
+
+.adress, .phone, .mail{
+  display: flex;
+  align-items: center;
+  padding:10px 0;
+}
+
+.gallery-container, .gallery{
+  @media (min-width:1200px){
+    max-width: 1250px;
+  }
+}
