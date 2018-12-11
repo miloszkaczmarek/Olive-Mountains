@@ -5,9 +5,11 @@ $(function()
     {
         if(data.result == 'success')
         {
-            $('form#reused_form').hide();
+            //$('form#reused_form').hide();
             $('#success_message').show();
-            $('#error_message').hide();
+            //$('#error_message').hide();
+            $( "input" ).val("");
+            $( "textarea" ).val("");
         }
         else
         {
@@ -47,7 +49,7 @@ $(function()
             $btn = $(this);
             $btn.prop('type','button' ); 
             $btn.prop('orig_label',$btn.text());
-            $btn.text('Sending ...');
+            $btn.text('Wyślij');
         });
         
 
